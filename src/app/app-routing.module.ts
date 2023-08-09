@@ -9,7 +9,7 @@ import { RegisterComponent } from './authentication/register/register.component'
 import { LoginComponent } from './authentication/login/login.component';
 
 const routes: Routes = [
-  { path: 'components/layouts', component: LayoutsComponent, 
+  { path: '',redirectTo:"components/layouts", component: LayoutsComponent, 
   children: [{ path: '', component: LoginComponent },
    { path: 'userlist', component: UserlistingComponent }, 
    { path: 'registeruser', component: RegisterComponent },
