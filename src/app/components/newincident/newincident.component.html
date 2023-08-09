@@ -1,0 +1,91 @@
+<div>
+  <form [formGroup]="angForm" (ngSubmit)="postdata(angForm)" autocomplete="off">
+    <table class="table">
+      <tr>
+        <td><label>Incident ID</label> </td>
+        <td><input type="text" formControlName="IncidentID" class="form-control" style="width: 200px;"></td>
+        <td><label>Incident Type</label></td>
+        <td> <select class="form-control" formControlName="IncidentType" style="width: 200px;">
+            <option *ngFor="let pow of incType" [value]="pow">{{pow}}</option>
+          </select></td>
+      </tr>
+     
+      <tr>
+        <td><label>ContactType</label></td>
+        <td> <select class="form-control" formControlName="ContactType">
+            <option *ngFor="let pow of contactType" [value]="pow">{{pow}}</option>
+          </select></td>
+        <td><label>Impact</label></td>
+        <td> <select class="form-control" formControlName="Impact">
+            <option *ngFor="let pow of priority" [value]="pow">{{pow}}</option>
+          </select></td>
+      </tr>
+      <tr>
+        <td><label>Status</label></td>
+        <td>
+          <select class="form-control" formControlName="Status">
+            <option *ngFor="let pow of status" [value]="pow">{{pow}}</option>
+          </select>
+        </td>
+        <td><label>Urgency</label></td>
+        <td> <select class="form-control" formControlName="Urgency">
+            <option *ngFor="let pow of priority" [value]="pow">{{pow}}</option>
+          </select></td>
+      </tr>
+      <tr>
+        <td><label>BusinessService</label></td>
+        <td><input type="text" formControlName="BusinessService" class="form-control"></td>
+        <td><label>Priority</label></td>
+        <td><select class="form-control" formControlName="Priority">
+            <option *ngFor="let pow of priority" [value]="pow">{{pow}}</option>
+          </select></td>
+
+      </tr>
+
+      <tr>
+
+
+      </tr>
+
+      <tr>
+        <td><label>AssignmentGroup</label></td>
+        <td><input type="text" formControlName="AssignmentGroup" class="form-control"></td>
+        <td><label>Assignedto</label></td>
+        <td><input type="text" formControlName="Assignedto" class="form-control"></td>
+      </tr>
+      <tr>
+        <td><label>Opened</label> </td>
+        <td><input type="text" [value]="dateformat" formControlName="Opened" class="form-control" style="width: 200px;"></td>
+        <td><label>Updated</label></td>
+        <td><input type="text" [value]=dateformat formControlName="Updated" class="form-control" style="width: 200px;"></td>
+      </tr>
+      <tr>
+        <td><label>CreatedBy</label> </td>
+        <td><input type="text" value="admin" formControlName="CreatedBy" class="form-control" style="width: 200px;"></td>
+        <td><label>UpdatedBy</label></td>
+        <td><input type="text" value="admin" formControlName="UpdatedBy" class="form-control" style="width: 200px;"></td>
+      </tr>
+      <tr>
+        <td><label>ConfigurationItem</label></td>
+        <td colspan="3"><input type="text" formControlName="ConfigurationItem" class="form-control"></td>
+      </tr>
+      <tr>
+        <td><label>ShortDescription</label></td>
+        <td colspan="3"><input type="text" formControlName="ShortDescription" class="form-control"></td>
+      </tr>
+      <tr>
+        <td><label>Description</label></td>
+        <td colspan="3"><input type="text" formControlName="Description" class="form-control"></td>
+      </tr>
+
+
+      <tr>
+        <td colspan="2"></td>
+        
+        <input type="submit" name="submit" value="Add New" class="btn btn-success">
+
+      </tr>
+     
+    </table>
+  </form>
+</div>
