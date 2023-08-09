@@ -4,13 +4,12 @@ import { NewincidentComponent } from './components/newincident/newincident.compo
 import { SearchincidentComponent } from './components/searchincident/searchincident.component';
 import { LayoutsComponent } from './components/layouts/layouts.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { PostsComponent } from './modules/posts/posts.component';
 import { UserlistingComponent } from './authentication/userlisting/userlisting.component';
 import { RegisterComponent } from './authentication/register/register.component';
 import { LoginComponent } from './authentication/login/login.component';
 
 const routes: Routes = [
-  { path: '', component: LayoutsComponent, 
+  { path: 'components/layouts', component: LayoutsComponent, 
   children: [{ path: '', component: LoginComponent },
    { path: 'userlist', component: UserlistingComponent }, 
    { path: 'registeruser', component: RegisterComponent },
