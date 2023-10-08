@@ -1,31 +1,38 @@
+<div class="div">
+  <button mat-raised-button color="primary" type="submit" style="float: right;">Submit</button>
+</div>
+<div class="table-holder">
+  <div class="title-holder">
+    <h1 class="list-title"></h1>
+  </div>
 <mat-card>
     <mat-card-header>
-        <h2>Registeration</h2>
+        <h3>Sign up for a New User / Already have an account? Log in</h3>
     </mat-card-header>
     <mat-card-content>
         <form class="example-form" [formGroup]="registerform" (ngSubmit)="proceedregister(registerform)">
-            <mat-form-field class="example-full-width">
+            <mat-form-field class="mat-form-field">
               <mat-label>Username</mat-label>
               <input matInput formControlName="UserName" >
             </mat-form-field>
-            <mat-form-field class="example-full-width">
+            <mat-form-field class="mat-form-field">
                 <mat-label>Name</mat-label>
                 <input matInput formControlName="Name" >
               </mat-form-field>
-              <mat-form-field class="example-full-width">
+              <mat-form-field class="mat-form-field">
                 <mat-label>Password</mat-label>
                 <input type="password" matInput formControlName="Password" >
               </mat-form-field>
-              <mat-form-field class="example-full-width">
+              <mat-form-field class="mat-form-field">
                 <mat-label>Email</mat-label>
                 <input matInput formControlName="Email" >
               </mat-form-field>
               
-              <mat-form-field class="example-full-width">
+              <mat-form-field class="mat-form-field">
                 <mat-label>Role</mat-label>
                 <input matInput formControlName="Role" >
               </mat-form-field>
-              <mat-form-field class="example-full-width">
+              <mat-form-field class="mat-form-field">
                 <mat-label>Project</mat-label>
                 <input matInput formControlName="Project" >
               </mat-form-field>
@@ -48,5 +55,6 @@
           </form>
     </mat-card-content>
   </mat-card>
+  </div>
 
 

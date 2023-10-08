@@ -1,52 +1,57 @@
 :host {
-    .mat-icon {
+  border: 2px solid green;
+  color:chocolate;
+  display: block;
+  padding: 1px;
+  
+  }
+
+.mat-icon {
       vertical-align: middle;
       margin-right: 1rem;
+      color: #f6fdf5 !important;
     }
-  }
-  .logo {
-    text-align: center;
-    padding: 2.6rem 1rem;
-  }
-  .mat-divider {
-    border-top-width: 2px;
-    border-color: white;
-  }
-  .mat-list-item {
-    color: #94a3b8 !important;
-    font-size: 0.8rem;
-    height: 44px !important;
-    margin-bottom: 4px;
-    &:hover {
+
+    .div {
+      background-color: #4b6361;
+      color: #f6fdf5;
+      
+    }
+
+    .logo {
+      text-align: center;
+      padding: 2.6rem 1rem;
+    }
+
+    .mat-divider {
+      border-top-width: 3px;
+      border-color: #01b0b5;
+    }
+
+    .mat-list-item {
+      color: #f6fdf5 !important;
+      font-size: 0.9rem;
+      height: 12px !important;
+      margin-bottom: 4px;
+    }mat-list-item :hover {
+      color:#fff;
+      background-color:#00bbbb;
+      text-shadow: 0px 0px 0px; 
+      }
+      
+
+    .list-item-active {
       color: #f2f5f7 !important;
+      color:#fff;
+      background-color:#00bbbb;
+      text-shadow: 0px 0px 0px; 
     }
-    ::ng-deep {
-      .mat-list-item-content {
-        border-radius: 5px;
-        margin: 0 8px;
-        &:hover {
-          background: #2c3344 !important;
-        }
-      }
+
+    .span {
+      color: #f2f5f7;
+      font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif !important;
     }
-  }
-  .list-item-active {
-   
+
+
   
-    color: #f2f5f7 !important;
-    ::ng-deep {
-      .mat-list-item-content {
-        background: #2c3344 !important;
-        &:hover {
-          background: #2c3344 !important;
-        }
-      }
-    }
-  }
-  .mat-subheader {
-    color: #818cf8;
-    font-size: 0.6rem;
-    font-weight: 100;
-    letter-spacing: 1px;
-  }
-  
+ 

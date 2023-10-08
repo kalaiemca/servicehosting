@@ -2,6 +2,7 @@ export class Incident {
 
     constructor(
         public IncidentID: number,
+        public IncidentNumber: string,
         public IncidentType: string,
         public ContactType: string,
         public Impact: string,

@@ -26,8 +26,9 @@ import {MatRadioModule} from "@angular/material/radio";
 import { MatInputModule } from '@angular/material/input';
 import {MatDialogModule} from '@angular/material/dialog'
 import { MatButtonModule } from '@angular/material/button';
-import {MatSelectModule} from "@angular/material/select"
-import {MatCheckboxModule} from "@angular/material/checkbox"
+import {MatSelectModule} from "@angular/material/select";
+import {MatCheckboxModule} from "@angular/material/checkbox";
+import { AgGridModule } from 'ag-grid-angular';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import {MatCheckboxModule} from "@angular/material/checkbox"
     MatDialogModule,
     MatButtonModule,
     MatSelectModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    AgGridModule
   ]
 })
 export class LayoutsModule { }

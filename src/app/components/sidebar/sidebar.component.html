@@ -1,28 +1,43 @@
-<mat-nav-list>
-    <h2 matSubheader>User</h2>
-    <a mat-list-item routerLink="/userlist" routerLinkActive="list-item-active">User List</a>
-    <a mat-list-item routerLink="/registeruser" routerLinkActive="list-item-active">Register User</a>
-<mat-divider></mat-divider>    
-<h2 matSubheader class="mt-2">Incident</h2>
-    <a mat-list-item routerLink="/newincident" routerLinkActive="list-item-active">
-        <mat-icon>create</mat-icon>New Incident</a>
-    <a mat-list-item routerLink="/viewincident" routerLinkActive="list-item-active" >
-        <mat-icon>search</mat-icon>All Incident</a>
-    <a mat-list-item routerLink="/viewincident" routerLinkActive="list-item-active">
-        <mat-icon>open</mat-icon>Open</a>
-    <a mat-list-item routerLink="/viewincident" routerLinkActive="list-item-active">
-        <mat-icon>assigned</mat-icon>Assigned to me</a>
-    <a mat-list-item routerLink="/dashboard" routerLinkActive="list-item-active">
-        <mat-icon>dashboard</mat-icon>Dashboard</a>
-<mat-divider></mat-divider>
+<div class="div">
+  <mat-nav-list>
 
-<h2 matSubheader>Tools</h2>
+    <h2 matSubheader class="mt-2">User</h2>
+    <a mat-list-item routerLink="/userlist" routerLinkActive="list-item-active">
+      <span class="span">List</span>
+    </a>
+    <a mat-list-item routerLink="/registeruser" routerLinkActive="list-item-active">
+      <span class="span">Register</span>
+    </a>
+    <mat-divider></mat-divider>
+    <h2 matSubheader class="mt-2">Incident</h2>
+    <a mat-list-item routerLink="/newincident" routerLinkActive="list-item-active">
+      <span class="span">New Incident</span></a>
+    <a mat-list-item routerLink="/viewincident" routerLinkActive="list-item-active">
+      <span class="span">All Incident</span></a>
+    <a mat-list-item routerLink="/viewincident" routerLinkActive="list-item-active">
+      <span class="span">Open</span></a>
+    <a mat-list-item routerLink="/viewincident" routerLinkActive="list-item-active">
+      <span class="span">Assigned to me</span></a>
+    <a mat-list-item routerLink="/dashboard" routerLinkActive="list-item-active">
+      <span class="span">Dashboard</span></a>
+    <mat-divider></mat-divider>
+
+    <h2 matSubheader>Tools</h2>
     <a mat-list-item routerLinkActive="list-item-active" routerlink="/contacts">
-        <mat-icon>import_contacts</mat-icon>
-        Contacts
+
+      <span class="span">Contacts</span>
     </a>
     <a mat-list-item routerLinkActive="list-item-active" routerlink="/contacts">
-        <mat-icon>contact_phone</mat-icon>
-        Leads
+
+      <span class="span"> Leads</span>
     </a>
-</mat-nav-list>
+    <a mat-list-item routerLinkActive="list-item-active" routerlink="/contacts">
+
+      <span class="span"> Leads</span>
+    </a>
+    <a mat-list-item routerLinkActive="list-item-active" routerlink="/contacts">
+
+      <span class="span"> Leads</span>
+    </a>
+  </mat-nav-list>
+</div>

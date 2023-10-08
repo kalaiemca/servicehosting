@@ -1,4 +1,7 @@
+import { IncidentdialogComponent } from './incidentdialog/incidentdialog.component';
 import { Component } from '@angular/core';
+import {MatDialog, MAT_DIALOG_DATA, MatDialogModule} from '@angular/material/dialog';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ServiceManagement';
+
+  
 }

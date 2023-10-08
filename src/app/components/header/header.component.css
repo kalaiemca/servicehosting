@@ -1,3 +1,15 @@
 ul li{
     list-style: none;
 }
+.line{
+    width: 99%;
+    height: 47px;
+    margin-top: 15px;
+    margin-left: -10px;
+    border-bottom: 3px solid #01b0b5;
+    position: absolute;
+    }
+.mat-toolbar{
+    background-color: #4b6361;
+    color:#f6fdf5;
+}

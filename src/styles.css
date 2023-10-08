@@ -1,23 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
 @import "node_modules/ngx-toastr/toastr.css";
 
+@import 'ag-grid-community/styles/ag-grid.css';
+@import 'ag-grid-community/styles/ag-theme-alpine.css';
 
-* {
-    font-family: "Montserrat", sans-serif;
-  }
-html, body { height: 100%; }
-body { margin: 0; 
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif }
-.mdc-button{
-    margin: 5px !important;
+
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif !important;
 }
-.mat-mdc-form-field{
-    width: 70%;
+
+.mdc-button {
+  margin: 5px !important;
 }
-.content{
-    display: block !important;
+
+.mat-mdc-form-field {
+  width: 70%;
+  font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif !important;
 }
-a{
-    color: white !important;
-padding: 1%;
+
+.content {
+  display: block !important;
+  font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif !important;
+}
+
+a {
+  color: white !important;
+  padding: 1%;
+  font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif !important;
 }
